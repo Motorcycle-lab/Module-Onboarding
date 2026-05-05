@@ -13,10 +13,40 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+     <label for="user-name">Your Name:</label>
+<input id="user-name", type="text", pattern="[A-Za-z\s]{2,}" 
+title="Please enter at least 2 letters. Numbers and symbols are not allowed"       
+required> </input>
+
+<br>
+
+<label for="email">Your Email:</label>
+<input id="email" type="email" required>  </input>
+<button id="go"> Go
+</button>
+
+<br>
+
+<label for="colors">Choose your favorite color:</label>
+<select id="colors" name="colour" required>
+  <option value="" disabled selected>Select a color...</option>
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+</select>
+
+<br>
+
+<label for="shirtsize">What size do you want?</label>
+
+<select id="shirtsize" name="size" required>
+  <option value="" disabled selected>Select a size...</option>
+  <option value="red">S</option>
+  <option value="blue">M</option>
+  <option value="green">L</option>
+  <option value="green">XL</option>
+  <option value="green">XXL</option>
+</select>
       </form>
     </main>
     <footer>
