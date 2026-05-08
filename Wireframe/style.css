@@ -38,23 +38,25 @@ svg {
 }
 
 .main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+  
   max-width: var(--container);
+   
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+.main-wrapper > *:first-child {
+  grid-column: span 2;
+}
+
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
 }
 
-.main-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
 
 article {
   border: var(--line);
